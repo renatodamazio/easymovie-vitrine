@@ -1,30 +1,18 @@
-// -- BASE OF STYLES
-@import "base/variables";
-@import "base/mixins";
-@import "base/fonts";
-@import "base/icons";
-@import "base/reset";
-@import "base/typography";
-@import "base/modifier";
+.container {
+    width: 1334px;
+}
 
-
-// -- VENDORS PUT HERE
-@import "vendors/bootstrap/bootstrap-custom";
-
+.main-site {
+    height: 100%;
+}
 
 // -- OBJECTS OF STYLES
-@import "objects/layout";
-@import "objects/table";
-@import "objects/button";
-@import "objects/card";
+// @import "objects/table";
+// @import "objects/button";
+// @import "objects/card";
+@import "objects/banner";
+@import "objects/userAvatar";
 
 
 // -- COMPONENTS OF STYLES
 @import "components/home";
-@import "components/docs";
-@import "components/calculator";
-@import "components/404";
-@import "components/footer";
-
-
-// -- HELPERS OF STYLES
