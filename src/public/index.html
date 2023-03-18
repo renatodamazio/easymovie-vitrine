@@ -8,34 +8,104 @@
 
     <main class="main-site">
       <div class="container">
-        <div class="col-lg-8 col-12">
-          <div class="banner">
-            <div class="user_space">
-              <div class="user_space_section-data">
-                <div class="user_space_avatar"></div>
-                <div class="user_space_data">
-                  <h1 class="user_space-name">Luana Mendes</h1>
-                  <h2 class="user_space-occupation">Videomaker e Ilustradora</h2>
-                  <div class="user_space_personal_info">
-                    <ul class="d-flex items-center justify-center mt-1 user_space_personal_info-list">
-                      <li class="px-2">São Paulo</li>
-                      <li class="px-2">32 anos</li>
-                    </ul>
+        <div class="col-lg-8 px-0">
+          <section class="pt-0">
+            <div class="col-12">
+              <div class="banner">
+                <div class="user_space">
+                  <div class="user_space_section-data">
+                    <div class="user_space_avatar"></div>
+                    <div class="user_space_data">
+                      <h1 class="user_space-name">Luana Mendes</h1>
+                      <h2 class="user_space-occupation">
+                        Videomaker e Ilustradora
+                      </h2>
+                      <div class="user_space_personal_info">
+                        <ul
+                          class="d-flex items-center justify-center mt-1 user_space_personal_info-list"
+                        >
+                          <li class="px-2">São Paulo</li>
+                          <li class="px-2">32 anos</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="user_space_section-call-to-action">
+                    <a href="#!" class="dse-button-link link-theme__primary"
+                      ><span>Solicitar orçamento</span></a
+                    >
                   </div>
                 </div>
               </div>
-
-             <div class="user_space_section-call-to-action">
-              <a href="#!" class="dse-button-link link-theme__primary"
-              ><span>Solicitar orçamento</span></a
-            >
-             </div>
             </div>
-          </div>
+          </section>
+
+          <section>
+            <h6 class="section__title mb-4">Criações</h6>
+            <ul class="d-flex videos__filter">
+              <li>
+                <div class="tag__outlined-primary--10 overflow-hidden fs-sm">
+                  Tudo
+                </div>
+              </li>
+              <li>
+                <div class="tag__outlined-primary--10 overflow-hidden fs-sm">
+                  Animações
+                </div>
+              </li>
+              <li>
+                <div class="tag__outlined-primary--10 overflow-hidden fs-sm">
+                  Publicidade
+                </div>
+              </li>
+              <li>
+                <div class="tag__outlined-primary--10 overflow-hidden fs-sm">
+                  Edição
+                </div>
+              </li>
+              <li>
+                <div class="tag__outlined-primary--10 overflow-hidden fs-sm">
+                  Gameplay
+                </div>
+              </li>
+            </ul>
+
+            <div class="card__videos__wrapper">
+              <div class="card__videos__row">
+                <% for(var x = 0; x < 10; x++) { %>
+
+                <div class="card__videos">
+                  <figure class="card__videos__figure">
+                    <img
+                      class="svg-icon"
+                      height="40px"
+                      src="<%= base.static %>images/play-circle.svg"
+                      title="Icon Play"
+                      width="40px"
+                    />
+                  </figure>
+                  <h3 class="card__videos__title">
+                    Institucional Livraria Novo amanhecer
+                  </h3>
+                  <div class="card__videos__hashs">
+                    <a href="">#editor</a>
+                    <a href="">#animação</a>
+                    <a href="">#livro</a>
+                    <a href="">#ilustração</a>
+                  </div>
+                </div>
+
+                <% } %>
+              </div>
+            </div>
+          </section>
         </div>
 
-        <div class="col-lg-4 col-4 pr-0">
-          <h1>Local host</h1>
+        <div class="col-lg-4">
+          <div class="about-author">
+
+          </div>
         </div>
       </div>
     </main>
