@@ -1,0 +1,85 @@
+<div
+id="dse-curtain"
+style="
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+"
+></div>
+<main class="main-site home" data-module="page-home">
+<header class="header">
+  <div class="container">
+    <div class="col-xs-12 px-0">
+      <div class="d-flex align-items-center">
+        <div class="col-xs-8 col-lg-4 px-0">
+          <a href="/" title="EasyMovie">
+            <img
+              data-src="<%= base.static %>/images/logo.svg"
+              width="120px"
+              height="30px"
+              class="lazyload logo"
+              alt="EasyMovie logo"
+            />
+          </a>
+        </div>
+
+        <nav class="navbar col-lg-8 col-xs-8 px-0">
+          <ul class="navbar__menu">
+            <li>
+              <a
+                href="contratar.html"
+                data-page="contratar"
+                alt="Contratar criação de vídeos"
+                >Contratar criação de vídeo</a
+              >
+            </li>
+            <li>
+              <a
+                href="parceiros.html"
+                data-page="parceiros"
+                alt="Seja um Parceiro"
+                >Seja um Parceiro</a
+              >
+            </li>
+            <li>
+              <a
+                href="roteiro-storyboard.html"
+                data-page="roteiro-storyboard"
+                alt="Roteiro & Storyboard"
+                >Roteiro & Storyboard</a
+              >
+            </li>
+
+            <li class="navbar__actions">
+              <a href="login.html" alt="Login" class="dse-button-link"
+                ><span>Entrar</span></a
+              >
+              <a
+                href="cadastro.html"
+                alt="Cadastrar"
+                class="dse-button-link link-theme__primary"
+              >
+                <span>Cadastrar</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div
+          id="toogle-menu"
+          class="dse-button rounded small d-none"
+          style="z-index: 9999"
+        >
+          <input type="checkbox" id="navi-toggle" class="checkbox" />
+          <label for="navi-toggle" class="button">
+            <span class="hamburger">&nbsp;</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
