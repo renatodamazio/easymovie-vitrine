@@ -1,0 +1,37 @@
+// -- section setup
+.o-section {
+  margin-bottom: rem(72px);
+
+  &--sm {
+    margin-bottom: 3.5rem;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &--lg {
+    margin-bottom: 8rem;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &--less {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-bottom: rem(56px);
+  }
+}
+
+// -- main wrapper
+.o-main-wrapper {
+  margin-top: rem(80px);
+
+  @include media-breakpoint-down(xs) {
+    margin-top: rem(56px);
+  }
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <%- include('partials/_head') -%>
+  </head>
+
+  <body class="c-docs">
+    <header class="c-docs__header row align-items-center">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto">
+            <p class="brand"><a href="https://boilerplate-ejs.netlify.app/">Gulp Boilerplate<span>EJS</span></a></p>
+          </div>
+          <div class="col-auto">
+            <ul class="nav">
+              <li><a href="https://github.com/alaunal/gulp-starterkit-ejs">Docs Github</a></li>
+              <li>v1.0.0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="o-main-wrapper">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-12 col-md-2">
+            <aside class="c-docs__menu">
+              <ul>
+                <li class="label">Content</li>
+                <li><a href="#docs-typography">Typography</a></li>
+                <li><a href="#docs-colors">Colors</a></li>
+                <li><a href="#docs-button">Button</a></li>
+                <li><a href="#docs-card">Card</a></li>
+              </ul>
+            </aside>
+          </div>
+          <div class="col pl-md-6">
+
+            <section class="o-section" id="docs-typography">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="c-docs__heading">
+                      <a href="#docs-typography">Base of typography</a>
+                    </h2>
+                    <p>
+                      Our typography, the most important medium of communication in our platform, needs to be perfectly
+                      legible to convey the core value of our brand.
+                    </p>
+
+                    <h3 class="c-docs__headline pt-5 pb-3">Our typeface</h3>
+                    <table class="o-table">
+                      <thead>
+                        <tr>
+                          <th>Name Typeface</th>
+                          <th>Example</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>Ponder-Regular</code></td>
+                          <td style="font-family: 'Ponder-Regular', sans-serif; line-height: 1.5;">A B C D E F G H I J K
+                            L M N O P Q R S T U V W X Y Z <br> a b c d e f g h i z k l m n o p q r s t u v w x y z <br>
+                            1 2 3 4 5 6 7 8 9 0 ~ ! @ # $ % ^ & * ( ) _ + = - , . / [ ] { } \ | : ; ' "</td>
+                        </tr>
+                        <tr>
+                          <td><code>Ponder-Medium</code></td>
+                          <td style="font-family: 'Ponder-Medium', sans-serif; line-height: 1.5;">A B C D E F G H I J K
+                            L M N O P Q R S T U V W X Y Z <br> a b c d e f g h i z k l m n o p q r s t u v w x y z <br>
+                            1 2 3 4 5 6 7 8 9 0 ~ ! @ # $ % ^ & * ( ) _ + = - , . / [ ] { } \ | : ; ' "</td>
+                        </tr>
+                        <tr>
+                          <td><code>Ponder-Bold</code></td>
+                          <td style="font-family: 'Ponder-Bold', sans-serif; line-height: 1.5;">A B C D E F G H I J K L
+                            M N O P Q R S T U V W X Y Z <br> a b c d e f g h i z k l m n o p q r s t u v w x y z <br> 1
+                            2 3 4 5 6 7 8 9 0 ~ ! @ # $ % ^ & * ( ) _ + = - , . / [ ] { } \ | : ; ' "</td>
+                        </tr>
+                        <tr>
+                          <td><code>Ponder-Black</code></td>
+                          <td style="font-family: 'Ponder-Black', sans-serif; line-height: 1.5;">A B C D E F G H I J K L
+                            M N O P Q R S T U V W X Y Z <br> a b c d e f g h i z k l m n o p q r s t u v w x y z <br> 1
+                            2 3 4 5 6 7 8 9 0 ~ ! @ # $ % ^ & * ( ) _ + = - , . / [ ] { } \ | : ; ' "</td>
+                        </tr>
+                        <tr>
+                          <td><code>Ponder-Light</code></td>
+                          <td style="font-family: 'Ponder-Light', sans-serif; line-height: 1.5;">A B C D E F G H I J K L
+                            M N O P Q R S T U V W X Y Z <br> a b c d e f g h i z k l m n o p q r s t u v w x y z <br> 1
+                            2 3 4 5 6 7 8 9 0 ~ ! @ # $ % ^ & * ( ) _ + = - , . / [ ] { } \ | : ; ' "</td>
+                        </tr>
+                        <tr>
+                          <td><code>Ponder-Thin</code></td>
+                          <td style="font-family: 'Ponder-Thin', sans-serif; line-height: 1.5;">A B C D E F G H I J K L
+                            M N O P Q R S T U V W X Y Z <br> a b c d e f g h i z k l m n o p q r s t u v w x y z <br> 1
+                            2 3 4 5 6 7 8 9 0 ~ ! @ # $ % ^ & * ( ) _ + = - , . / [ ] { } \ | : ; ' "</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h3 class="c-docs__headline pt-5 pb-3">Heading</h3>
+                    <table class="o-table">
+                      <thead>
+                        <tr>
+                          <td>Tag</td>
+                          <td>typeface</td>
+                          <td>font-size</td>
+                          <td>Example</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>h1</code></td>
+                          <td><code>Ponder-Black</code></td>
+                          <td>56px/3rem</td>
+                          <td>
+                            <h1>Heading text h1</h1>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>h2</code></td>
+                          <td><code>Ponder-Black</code></td>
+                          <td>40px/2.5rem</td>
+                          <td>
+                            <h2>Heading text h2</h2>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>h3</code></td>
+                          <td><code>Ponder-Bold</code></td>
+                          <td>36px/2.25rem</td>
+                          <td>
+                            <h3>Heading text h3</h3>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>h4</code></td>
+                          <td><code>Ponder-Bold</code></td>
+                          <td>28px1.75rem</td>
+                          <td>
+                            <h4>Heading text h4</h4>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>h5</code></td>
+                          <td><code>Ponder-Bold</code></td>
+                          <td>24px/1.5rem</td>
+                          <td>
+                            <h5>Heading text h5</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>h6</code></td>
+                          <td><code>Ponder-Medium</code></td>
+                          <td>18px/1.125rem</td>
+                          <td>
+                            <h6>Heading text h6</h6>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h3 class="c-docs__headline pt-5 pb-3">Paragraph</h3>
+                    <table class="o-table">
+                      <thead>
+                        <tr>
+                          <th>tag</th>
+                          <th>typeface</th>
+                          <th>Example</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>p</code></td>
+                          <td><code>Ponder-Regular</code></td>
+                          <td>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of
+                              a page when looking at its layout.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>strong</code></td>
+                          <td><code>Ponder-Bold</code></td>
+                          <td>
+                            <p>It is a long <strong>established fact that a reader</strong> will be distracted by the
+                              readable <strong>content of a page</strong> when looking at its layout.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <section class="o-section" id="docs-colors">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="c-docs__heading">
+                      <a href="#docs-colors">Base of Colors</a>
+                    </h2>
+                    <p>
+                      colors play an important role when we are working with a product, a service or a space. The right
+                      combination of colors can influence how users feel, think, and behave.
+                    </p>
+
+                    <div>
+                      <h3 class="c-docs__headline pt-5 pb-3">Primary Colors</h3>
+                      <p class="mb-3">Black is used primarily for body text and headings, and White is used for screen
+                        backgrounds
+                        and
+                        negative space.</p>
+                      <div class="row mb-3">
+                        <div class="c-docs__color-card mr-2" style="background-color: #000000;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLACK100</strong></p>
+                            <p><small>Hex: #000000</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #222222;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLACK80</strong></p>
+                            <p><small>Hex: #222222</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #ffffff;">
+                          <div class="body">
+                            <p class="mb-1"><strong>WHITE100</strong></p>
+                            <p><small>Hex: #ffffff</small></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <div class="c-docs__color-card mr-2" style="background-color: #003049;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLUE100</strong></p>
+                            <p><small>Hex: #003049</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card" style="background-color: #f77f00;">
+                          <div class="body">
+                            <p class="mb-1"><strong>ORANGE100</strong></p>
+                            <p><small>Hex: #f77f00</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div>
+                      <h3 class="c-docs__headline pt-5 pb-3">Secondary Colors</h3>
+                      <p class="mb-3">Secondary color provides more ways to accent and distinguish our product. Each
+                        color is
+                        selected
+                        with purpose in order to provide meaningful feedback within our products</p>
+                      <div class="row mb-4">
+                        <div class="c-docs__color-card mr-2" style="background-color: #05668d;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLUE50</strong></p>
+                            <p><small>Hex: #05668d</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #d62828;">
+                          <div class="body">
+                            <p class="mb-1"><strong>RED100</strong></p>
+                            <p><small>Hex: #d62828</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #02c39a;">
+                          <div class="body">
+                            <p class="mb-1"><strong>GREEN100</strong></p>
+                            <p><small>Hex: #02c39a</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card" style="background-color: #fcbf49;">
+                          <div class="body">
+                            <p class="mb-1"><strong>YELLOW100</strong></p>
+                            <p><small>Hex: #fcbf49</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div>
+                      <h3 class="c-docs__headline pt-5 pb-3">Shades and Tints</h3>
+                      <p class="mb-3">We intend for tints and shades to be ever evolving, offering an endless palette to
+                        choose from.
+                        Usage of these colors varies depending on scenarios, but they come in handy for components in
+                        our products.</p>
+                      <div class="row mb-3">
+                        <div class="c-docs__color-card mr-2" style="background-color: #d62828;">
+                          <div class="body">
+                            <p class="mb-1"><strong>RED100</strong></p>
+                            <p><small>Hex: #d62828</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #de5353;">
+                          <div class="body">
+                            <p class="mb-1"><strong>RED80</strong></p>
+                            <p><small>Hex: #de5353</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #e67e7e;">
+                          <div class="body">
+                            <p class="mb-1"><strong>RED60</strong></p>
+                            <p><small>Hex: #e67e7e</small></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="c-docs__color-card mr-2" style="background-color: #f77f00;">
+                          <div class="body">
+                            <p class="mb-1"><strong>ORANGE100</strong></p>
+                            <p><small>Hex: #f77f00</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #f99933;">
+                          <div class="body">
+                            <p class="mb-1"><strong>ORANGE80</strong></p>
+                            <p><small>Hex: #f99933</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #fab266;">
+                          <div class="body">
+                            <p class="mb-1"><strong>ORANGE60</strong></p>
+                            <p><small>Hex: #fab266</small></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="c-docs__color-card mr-2" style="background-color: #02c39a;">
+                          <div class="body">
+                            <p class="mb-1"><strong>GREEN100</strong></p>
+                            <p><small>Hex: #02c39a</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #35cfae;">
+                          <div class="body">
+                            <p class="mb-1"><strong>GREEN80</strong></p>
+                            <p><small>Hex: #35cfae</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #67dbc2;">
+                          <div class="body">
+                            <p class="mb-1"><strong>GREEN60</strong></p>
+                            <p><small>Hex: #67dbc2</small></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="c-docs__color-card mr-2" style="background-color: #fcbf49;">
+                          <div class="body">
+                            <p class="mb-1"><strong>YELLOW100</strong></p>
+                            <p><small>Hex: #fcbf49</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #fdcc6d;">
+                          <div class="body">
+                            <p class="mb-1"><strong>YELLOW80</strong></p>
+                            <p><small>Hex: #fdcc6d</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #fedfa4;">
+                          <div class="body">
+                            <p class="mb-1"><strong>YELLOW60</strong></p>
+                            <p><small>Hex: #fedfa4</small></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="c-docs__color-card mr-2" style="background-color: #003049;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLUE100</strong></p>
+                            <p><small>Hex: #003049</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #33596d;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLUE80</strong></p>
+                            <p><small>Hex: #33596d</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #05668d;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLUE50</strong></p>
+                            <p><small>Hex: #05668d</small></p>
+                          </div>
+                        </div>
+                        <div class="c-docs__color-card mr-2" style="background-color: #3785a4;">
+                          <div class="body">
+                            <p class="mb-1"><strong>BLUE30</strong></p>
+                            <p><small>Hex: #3785a4</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="o-section" id="docs-button">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="c-docs__heading">
+                      <a href="#docs-colors">Button</a>
+                    </h2>
+                    <p>
+                      Buttons are action items that can initiate a certain action or change state, they can have customisable background, icons and text.
+                      Buttons should be easy to discover and clearly indicate the intended action.
+                    </p>
+
+                    <div>
+                      <h3 class="c-docs__headline pt-5 pb-3">Button Collection</h3>
+                      <p class="mb-3">
+                        a collection of button design system and variant colour can pick
+                      </p>
+
+                      <button class="o-btn">default</button>
+                      <button class="o-btn primary">Primary</button>
+                      <button class="o-btn secondary">Secondary</button>
+                      <button class="o-btn danger">Danger</button>
+                      <button class="o-btn warning">Warning</button>
+                      <button class="o-btn success">Success</button>
+                    </div>
+
+                    <div class="mb-4">
+                      <h3 class="c-docs__headline pt-5 pb-3">Button Extra Modifier</h3>
+                      <table class="o-table">
+                        <thead>
+                          <tr>
+                            <th>type</th>
+                            <th>class modfier</th>
+                            <th>Example</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Button link</td>
+                            <td><code>.link</code></td>
+                            <td>
+                              <button class="o-btn link">button link</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>button small</td>
+                            <td><code>.sm</code></td>
+                            <td>
+                              <button class="o-btn sm">button small</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>button large</td>
+                            <td><code>.lg</code></td>
+                            <td>
+                              <button class="o-btn lg">button large</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="o-section" id="docs-card">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="c-docs__heading">
+                      <a href="#docs-colors">Card</a>
+                    </h2>
+                    <p>
+                      Cards are containers to show content or actions relevant to an app or certain function. They are always the top layer when They are shown in any layout.
+                      They can contain other components as part of them, also can have multiple behaviours depending on how they are used in a flow.
+                      They appear from the bottom and can be scrollable or fixed depending on their type.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+    <%- include('partials/_script') -%>
+  </body>
+
+</html>
