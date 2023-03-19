@@ -16,6 +16,15 @@
     z-index: 9;
   }
 
+  &__carousel {
+    .owl-stage {
+      min-width: 100%;
+
+      .owl-item {
+      }
+    }
+  }
+
   path {
     fill: #fff;
   }
@@ -39,12 +48,15 @@
       line-height: 20px;
       display: flex;
       align-items: center;
-
-     
     }
   }
 
   &__video {
+    &__wrapper {
+      width: 100%;
+      display: inline-block;
+    }
+
     &__top-group {
       display: flex;
       justify-content: space-between;
@@ -54,6 +66,12 @@
     &__social {
       a {
         margin: 0 9px;
+
+        &:hover {
+          path {
+            fill: var(--dse-color-primary);
+          }
+        }
 
         &:last-child {
           margin-right: 0;

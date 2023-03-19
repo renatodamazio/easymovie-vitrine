@@ -19,9 +19,22 @@ const filterVideos = () => {
     $(videos).addClass(class__hidden_video)
   })
 }
+
+const carousel = () => {
+  const carousel_video = $('.modal-portfolio__carousel__owl-slider').owlCarousel({
+    items: 1,
+    loop: true,
+    dots: false
+  })
+
+  $(".slide-control.arrow-left").click(() => carousel_video.trigger('prev.owl.carousel'));
+  $(".slide-control.arrow-right").click(() => carousel_video.trigger('next.owl.carousel'));
+}
+
 const Home = () => {
   $(document).ready(() => {
     filterVideos()
+    carousel()
   })
 }
 export default Home

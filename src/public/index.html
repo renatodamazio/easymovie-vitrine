@@ -19,46 +19,56 @@
             />
           </a>
           <div class="col-lg-8 modal-portfolio__video">
-            <div class="modal-portfolio__video__player">
-              <!-- Video vai aqui.-->
-            </div>
-            <div class="modal-portfolio__video__top-group">
-              <div class="modal-portfolio__video__title">
-                Institucional Livraria Novos Ares
+            <div class="modal-portfolio__carousel">
+              <div class="modal-portfolio__carousel__owl-slider owl-carousel">
+                <!-- Items -->
+                <% for(var x = 0; x < 4; x++) { %>
+                <div class="modal-portfolio__video__wrapper">
+                  <div class="modal-portfolio__video__player">
+                    <!-- Video vai aqui.-->
+                  </div>
+                  <div class="modal-portfolio__video__top-group">
+                    <div class="modal-portfolio__video__title">
+                      Institucional Livraria Novos Ares
+                    </div>
+                    <div class="modal-portfolio__video__social">
+                      <a href="#!">
+                        <img
+                          class="svg-icon"
+                          width="24px"
+                          height="24px"
+                          src="<%= base.static %>images/heart.svg"
+                          title="Icone Play"
+                        />
+                      </a>
+
+                      <a href="#!">
+                        <img
+                          class="svg-icon"
+                          width="24px"
+                          height="24px"
+                          src="<%= base.static %>images/send-2.svg"
+                          title="Icone Play"
+                        />
+                      </a>
+
+                      <a href="#!">
+                        <img
+                          class="svg-icon"
+                          width="24px"
+                          height="24px"
+                          src="<%= base.static %>images/archive-add.svg"
+                          title="Icone Play"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <% } %>
+
+                <!-- .Items -->
               </div>
-              <div class="modal-portfolio__video__social">
-                <a href="#!">
-                  <img
-                    class="svg-icon"
-                    width="24px"
-                    height="24px"
-                    src="<%= base.static %>images/heart.svg"
-                    title="Icone Play"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    class="svg-icon"
-                    width="24px"
-                    height="24px"
-                    src="<%= base.static %>images/send-2.svg"
-                    title="Icone Play"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    class="svg-icon"
-                    width="24px"
-                    height="24px"
-                    src="<%= base.static %>images/archive-add.svg"
-                    title="Icone Play"
-                  />
-                </a>
-              </div>
             </div>
-
             <div class="modal-portfolio__slide__control">
               <a href="#!" class="arrow-left slide-control">
                 <img
