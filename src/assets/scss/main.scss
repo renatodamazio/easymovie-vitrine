@@ -1,18 +1,33 @@
 .container {
-    width: 1334px;
-    display: flex;
+  width: 1334px;
+  display: flex;
+}
+
+.dse-tags__dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+
+  height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
 
 // -- OBJECTS OF STYLES
 // @import "objects/table";
 // @import "objects/button";
 // @import "objects/card";
-@import "objects/banner";
-@import "objects/titles";
-@import "objects/range";
-@import "objects/userAvatar";
-@import "objects/card-videos";
-
+@import 'objects/banner';
+@import 'objects/modal';
+@import 'objects/titles';
+@import 'objects/range';
+@import 'objects/userAvatar';
+@import 'objects/card-videos';
 
 // -- COMPONENTS OF STYLES
-@import "components/home";
+@import 'components/home';

@@ -3,8 +3,193 @@
   <head>
     <%- include('partials/_head') -%>
   </head>
-  <body >
+  <body>
     <%- include('partials/_menu') -%>
+
+    <div class="modal-portfolio">
+      <div class="container modal-portfolio__wrapper">
+        <div class="col-lg-12">
+          <a href="#!" class="modal-portfolio__close">
+            <img
+              src="<%= base.static %>images/close-circle-outline.svg"
+              alt=""
+              width="40px"
+              height="40px"
+              class="svg-icon"
+            />
+          </a>
+          <div class="col-lg-8 modal-portfolio__video">
+            <div class="modal-portfolio__video__player">
+              <!-- Video vai aqui.-->
+            </div>
+            <div class="modal-portfolio__video__top-group">
+              <div class="modal-portfolio__video__title">
+                Institucional Livraria Novos Ares
+              </div>
+              <div class="modal-portfolio__video__social">
+                <a href="#!">
+                  <img
+                    class="svg-icon"
+                    width="24px"
+                    height="24px"
+                    src="<%= base.static %>images/heart.svg"
+                    title="Icone Play"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    class="svg-icon"
+                    width="24px"
+                    height="24px"
+                    src="<%= base.static %>images/send-2.svg"
+                    title="Icone Play"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    class="svg-icon"
+                    width="24px"
+                    height="24px"
+                    src="<%= base.static %>images/archive-add.svg"
+                    title="Icone Play"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="modal-portfolio__slide__control">
+              <a href="#!" class="arrow-left slide-control">
+                <img
+                  class="svg-icon"
+                  width="20px"
+                  height="20px"
+                  src="<%= base.static %>images/arrow-left.svg"
+                  title="Icone Play"
+                />
+                &nbsp;&nbsp; anterior
+              </a>
+              <a href="#!" class="arrow-right slide-control"
+                >próximo &nbsp;&nbsp;
+                <img
+                  class="svg-icon"
+                  width="20px"
+                  height="20px"
+                  src="<%= base.static %>images/arrow-right-default.svg"
+                  title="Icone Play"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 modal-portfolio__side-bar">
+            <div class="modal-portfolio__side-bar__user section-separator">
+              <div class="modal-portfolio__side-bar__user__picture">
+                <div class="user_space_avatar user_space_avatar--small">
+                  <img
+                    src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_811400348_2000133320009280235_401847.jpg"
+                    alt="Lua
+                   Mendes"
+                  />
+                </div>
+              </div>
+              <h3 class="modal-portfolio__side-bar__user__name">Melissa N.</h3>
+            </div>
+            <!--- -->
+            <div class="modal-portfolio__side-bar__info section-separator">
+              <h3 class="modal-portfolio__side-bar__title">Atuação</h3>
+              <ol class="modal-portfolio__side-bar__info__tags">
+                <li>
+                  <a
+                    href="#!"
+                    class="tag__filled-primary overflow-hidden fs-sm w-auto"
+                  >
+                    Edição
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#!"
+                    class="tag__filled-primary overflow-hidden fs-sm w-auto"
+                  >
+                    Capitação
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#!"
+                    class="tag__filled-primary overflow-hidden fs-sm w-auto"
+                  >
+                    iluminação
+                  </a>
+                </li>
+              </ol>
+            </div>
+
+            <!-- Tools -->
+            <div class="modal-portfolio__side-bar__tools section-separator">
+              <h3 class="modal-portfolio__side-bar__title">Ferramentas</h3>
+            </div>
+
+            <!-- Tags -->
+            <div class="modal-portfolio__side-bar__tags section-separator">
+              <h3 class="modal-portfolio__side-bar__title">Tags</h3>
+              <ol class="modal-portfolio__side-bar__tags__group">
+                <li>
+                  <div class="dse-tags__dark">Institucional</div>
+                </li>
+                <li>
+                  <div class="dse-tags__dark">Livraria</div>
+                </li>
+              </ol>
+            </div>
+
+            <!-- Descrição -->
+            <div
+              class="modal-portfolio__side-bar__description section-separator"
+            >
+              <h3 class="modal-portfolio__side-bar__title">Descrição</h3>
+
+              <div
+                class="modal-portfolio__side-bar__description__text text--hidden"
+              >
+                Graduanda em Comunicação Social - Publicidade e Propaganda pela
+                Pontifícia Universidade Católica de Minas Gerais (PUC Minas).
+                Técnica em Administração pelo Instituto Federal de Minas Gerais
+                (IFMG).Atuou como estagiária em comunicação das academias UAU
+                Fit, criando conteúdos para web e redes sociais, conteúdos
+                off-line e gerenciado mídias.
+              </div>
+              <a
+                href="#!"
+                class="modal-portfolio__side-bar__description__text__more"
+                >Ver mais</a
+              >
+            </div>
+
+            <div
+              class="modal-portfolio__side-bar__call-to-action section-separator"
+            >
+              <a
+                href="#!"
+                class="dse-button-link link-theme____neutral__outlined icon--right"
+              >
+                <i>
+                  <img
+                    class="svg-icon"
+                    width="24px"
+                    height="24px"
+                    src="<%= base.static %>images/clipboard-dollar.svg"
+                    title="Icone Play"
+                  />
+                </i>
+                <span>Pedir orçamento</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main class="main-site">
       <div class="container">

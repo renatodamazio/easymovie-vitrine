@@ -29,11 +29,22 @@
     border: 2px solid #ffffff;
     border-radius: 99px;
     overflow: hidden;
-    
+
     img {
       width: 146px;
       height: 146px;
       object-fit: cover;
+    }
+
+    &--small {
+      width: 42px;
+      height: 42px;
+
+      img {
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+      }
     }
   }
 
