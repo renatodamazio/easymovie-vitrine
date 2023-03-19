@@ -76,7 +76,8 @@
               <li>
                 <a
                   href="#!"
-                  class="tag__outlined-primary--10 overflow-hidden fs-sm"
+                  data-button-category="all"
+                  class="tag__outlined-primary--10 overflow-hidden fs-sm filter-button"
                 >
                   Tudo
                 </a>
@@ -84,7 +85,8 @@
               <li>
                 <a
                   href="#!"
-                  class="tag__outlined-primary--10 overflow-hidden fs-sm"
+                  data-button-category="animacao"
+                  class="tag__outlined-primary--10 overflow-hidden fs-sm filter-button"
                 >
                   Animações
                 </a>
@@ -92,7 +94,8 @@
               <li>
                 <a
                   href="#!"
-                  class="tag__outlined-primary--10 overflow-hidden fs-sm"
+                  data-button-category="publicidade"
+                  class="tag__outlined-primary--10 overflow-hidden fs-sm filter-button"
                 >
                   Publicidade
                 </a>
@@ -100,7 +103,8 @@
               <li>
                 <a
                   href="#!"
-                  class="tag__outlined-primary--10 overflow-hidden fs-sm"
+                  data-button-category="edicao"
+                  class="tag__outlined-primary--10 overflow-hidden fs-sm filter-buttons"
                 >
                   Edição
                 </a>
@@ -108,6 +112,7 @@
               <li>
                 <a
                   href="#!"
+                  data-button-category="game-play"
                   class="tag__outlined-primary--10 overflow-hidden fs-sm"
                 >
                   Gameplay
@@ -121,26 +126,30 @@
                   const items = [
                     {
                       title: "John Wick Chapter 4",
+                      category: "animacao",
                       cover: "https://cdn.bhdw.net/im/john-wick-chapter-3-wallpaper-30271_w635.webp"
                     },
                     {
                       title: "Avengers",
+                      category: "publicidade",
                       cover: "https://i.pinimg.com/originals/62/5f/6b/625f6beceff0ba88f5787c20f1a202c6.jpg"
                     },
                     {
                       title: "Game of Thrones",
+                      category: "edicao",
                       cover: "https://www.igeeksblog.com/wp-content/uploads/2021/03/Game-of-Thrones-Season-8-iPhone-Wallpaper.jpg"
                     },
                     {
                       title: "True Detective season 1",
+                      category: "game-play",
                       cover: "https://images7.alphacoders.com/645/645727.jpg"
                     }
                   ];
                   
                   for(var x = 0; x < items.length; x++) { %>
 
-                <div class="card__videos">
-                  <a href="#!" class="card__videos__video--action">
+                <div class="card__videos" data-category="<%= items[x].category %>">
+                  <a href="#!" class="card__videos__video--action" alt="Tocar o video <%= items[x].title %>">
                     <figure
                       class="card__videos__figure"
                       style="
