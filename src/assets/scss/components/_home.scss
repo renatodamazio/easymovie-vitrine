@@ -5,6 +5,15 @@
       margin-right: 10px;
     }
     margin-bottom: 32px;
+
+    .filter-button {
+      &--active {
+        background-color: var(--dse-color-primary-10);
+      }
+      &:hover {
+        background-color: var(--dse-color-primary-10);
+      }
+    }
   }
 }
 
@@ -75,13 +84,13 @@
     margin-bottom: 8px;
 
     &:before {
-        content: '';
-        width: 8px;
-        height: 8px;
-        display: inline-block;
-        margin-right: 16px;
-        border-radius: 100%;
-        background: var(--dse-color-primary);
-      }
+      content: '';
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      margin-right: 16px;
+      border-radius: 100%;
+      background: var(--dse-color-primary);
+    }
   }
 }

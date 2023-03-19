@@ -190,7 +190,7 @@ gulp.task('compile-scripts', done => {
         .pipe(webpackStream({
             mode: 'production',
             output: {
-                chunkFilename: '[hash].modules.js',
+                chunkFilename: '[name].modules.js',
                 publicPath: "static/js/",
                 path: path.resolve(__dirname, "static/js"),
             },

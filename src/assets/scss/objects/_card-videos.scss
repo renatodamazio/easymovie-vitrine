@@ -4,6 +4,10 @@
   margin-right: 7px;
   margin-bottom: 46px;
 
+  &--hidden-video {
+    display: none;
+  }
+
   &__video--action {
     color: #000;
   }

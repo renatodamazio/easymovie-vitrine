@@ -1,20 +1,18 @@
 window.addEventListener('load', () => {
-    const modules = document.querySelectorAll('[data-module]');
+  const modules = document.querySelectorAll('[data-module]')
+  
+  modules.forEach((node) => {
+    let moduleName = node.dataset.module
 
-    modules.forEach(node => {
-      let moduleName = node.dataset.module;
-
-      switch (moduleName) {
-        case 'page-404':
-          import('./modules/page404')
-          .then((module) => {
-            module.default();
-          });
-          break;
-
-        default:
-          console.log('module not found!');
-          break;
-      }
-    });
-});
+    switch (moduleName) {
+      case 'page-home':
+        import('./modules/pageHome').then((module) => {
+          module.default()
+        })
+        break
+      default:
+        console.log('module not found!')
+        break
+    }
+  })
+})
