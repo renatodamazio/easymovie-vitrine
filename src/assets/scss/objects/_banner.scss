@@ -4,7 +4,10 @@
   height: 196px;
   left: 0;
   display: inline-block;
-  background: #d65151;
+  background-color: #d65151;
+  background-image: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   position: relative;
 }

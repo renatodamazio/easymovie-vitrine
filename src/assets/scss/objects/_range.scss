@@ -1,0 +1,21 @@
+.range {
+  display: flex;
+  align-items: baseline;
+
+  span {
+    width: 100%;
+    height: 2px;
+    border-radius: 30px;
+    margin-right: 4px;
+    display: inline-block;
+    background: #B3D0FE;
+
+    &.active {
+        background: #0161fa;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

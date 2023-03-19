@@ -4,6 +4,10 @@
   margin-right: 7px;
   margin-bottom: 46px;
 
+  &__video--action {
+    color: #000;
+  }
+
   &__row {
     margin-left: -5px;
     width: 108%;
@@ -21,6 +25,13 @@
     margin-bottom: 8px;
     align-items: center;
     justify-content: center;
+    background-position: center ceter;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    path {
+        fill: var(--dse-card-video-text-color);
+    }
   }
 
   &__title {
