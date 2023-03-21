@@ -1,6 +1,18 @@
+$small: 300px;
+$medium: 768px;
+
 .container {
   width: 1334px;
   display: flex;
+
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.main-site {
+  padding-bottom: 100px;
 }
 
 .dse-tags__dark {
