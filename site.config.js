@@ -25,8 +25,8 @@ const DATA = {
     "base": {
         "static": "static/",
         "revid": makeId(8),
-        "title": "GULP Bolilerplate - Ejs | akcode",
-        "metaDesc": "A HTML templates using gulp and Ejs - support dynamic import with webpack-stream"
+        "title": "EasyMovie | Plataforma de contratação e produção de vídeo",
+        "metaDesc": "Receba propostas em poucas horas para a criação do seu vídeo e contrate o produtor ideal. Encontre produtoras e profissionais de produção de vídeo."
     }
 };
 
