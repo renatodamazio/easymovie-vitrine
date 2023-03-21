@@ -10,6 +10,12 @@
   background-size: cover;
   border-radius: 16px;
   position: relative;
+
+  @media only screen and (max-width: 1000px) {
+    .user_space_avatar {
+      margin-bottom: 18px;
+    }
+  }
 }
 
 .main-banner {
