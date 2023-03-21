@@ -19,6 +19,7 @@
             />
           </a>
           <div class="col-lg-8 modal-portfolio__video">
+            <!-- Caraousel -->
             <div class="modal-portfolio__carousel">
               <div class="modal-portfolio__carousel__owl-slider owl-carousel">
                 <!-- Items -->
@@ -69,6 +70,7 @@
                 <!-- .Items -->
               </div>
             </div>
+            <!-- Controle do slider -->
             <div class="modal-portfolio__slide__control">
               <a href="#!" class="arrow-left slide-control">
                 <img
@@ -91,6 +93,7 @@
               /></a>
             </div>
           </div>
+          <!--Side bar foto usuário e informações -->
           <div class="col-lg-4 modal-portfolio__side-bar">
             <div class="modal-portfolio__side-bar__user section-separator">
               <div class="modal-portfolio__side-bar__user__picture">
@@ -172,7 +175,7 @@
               </div>
               <a
                 href="#!"
-                class="modal-portfolio__side-bar__description__text__more"
+                class="modal-portfolio__side-bar__description__text__more read-more"
                 >Ver mais</a
               >
             </div>
@@ -288,7 +291,7 @@
                   <a
                     href="#!"
                     data-button-category="all"
-                    class="tag__outlined-primary--10 overflow-hidden fs-sm filter-button"
+                    class="tag__outlined-primary--10 overflow-hidden fs-sm filter-button filter-button--active"
                   >
                     Tudo
                   </a>
@@ -350,13 +353,14 @@
                   >
                     <a
                       href="#!"
-                      class="card__videos__video--action"
+                      class="card__videos__video--action open-modal-portfolio"
                       alt="Tocar o video <%= items[x].title %>"
                     >
-                      <figure
-                        class="card__videos__figure"
-                        style="background-image: url('<%= items[x].cover %>')"
-                      >
+                      <figure class="card__videos__figure">
+                        <div
+                          class="card__videos__figure__background"
+                          style="background-image: url('<%= items[x].cover %>')"
+                        ></div>
                         <img
                           class="svg-icon"
                           height="40px"
@@ -383,7 +387,10 @@
           </section>
         </div>
 
-        <div class="col-lg-4 col-12 category-home" data-home-category="informacoes">
+        <div
+          class="col-lg-4 col-12 category-home"
+          data-home-category="informacoes"
+        >
           <div class="about-author">
             <h6 class="section__title mb-4">Sobre mim</h6>
             <p class="about-author__summary about-author__text">

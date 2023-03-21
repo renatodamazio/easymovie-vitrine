@@ -53,10 +53,47 @@ const filterCategoriesHome = () => {
   })
 }
 
+const readMoreLess = () => {
+  let defaultHeight = 130
+  let text = $('.modal-portfolio__side-bar__description__text')
+  let textHeight = text[0].scrollHeight
+  let button = $('.read-more')
+  text.css({ 'max-height': defaultHeight, overflow: 'hidden' })
+
+  button.click(function () {
+    let newHeight = 0
+    if (text.hasClass('active')) {
+      newHeight = defaultHeight
+      text.removeClass('active')
+      button.text('Ver mais')
+    } else {
+      newHeight = textHeight + 30
+      text.addClass('active')
+      button.text('Ver menos')
+    }
+    text.animate(
+      {
+        height: newHeight,
+        'max-height': newHeight,
+      },
+      500
+    )
+    console.log(newHeight)
+  })
+}
+
 const Home = () => {
   $(document).ready(() => {
+    $('.open-modal-portfolio').click(() => {
+      $('.modal-portfolio').stop().fadeIn()
+    })
+
+    $('.modal-portfolio__close').click(() =>
+      $('.modal-portfolio').stop().fadeOut()
+    )
     filterCategoriesHome()
     filterVideos()
+    readMoreLess()
     carousel()
   })
 }

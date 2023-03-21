@@ -16,6 +16,12 @@
 
   &__video--action {
     color: #000;
+
+    &:hover {
+      .card__videos__figure__background {
+        transform: scale(1.5); -webkit-transform: scale(1.5);
+      }
+    }
   }
 
   &__row {
@@ -40,9 +46,26 @@
     margin-bottom: 8px;
     align-items: center;
     justify-content: center;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    position: relative;
+    overflow: hidden;
+
+    .svg-icon {
+      z-index: 9;
+      position: relative;
+    }
+
+    &__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.5s var(--dse-card-video-cover-transition);
+    }
 
     @media only screen and (max-width: 1000px) {
       width: 100%;
