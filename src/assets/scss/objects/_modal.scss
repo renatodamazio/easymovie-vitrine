@@ -189,6 +189,10 @@
       overflow: hidden;
       padding-right: 100px;
 
+      &.active {
+        overflow: auto;
+      }
+
       &.text--hidden {
         &.active::before {
           opacity: 0;
