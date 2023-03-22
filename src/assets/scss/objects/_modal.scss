@@ -10,7 +10,14 @@
   display: block;
   color: #fff;
   overflow: auto;
-  display: none;
+  display: block;
+
+  .owl-stage,
+  .owl-item,
+  .owl-loaded,
+  .owl-stage-outer {
+    height: 100%;
+  }
 
   @media only screen and (max-width: 1000px) {
     padding-top: 70px;
@@ -29,6 +36,12 @@
   }
 
   &__carousel {
+    height: 100%;
+
+    @media only screen and (max-width: 1000px) {
+      height: auto;
+    }
+
     .owl-stage {
       min-width: 100%;
     }
@@ -67,9 +80,23 @@
   }
 
   &__video {
+    height: 100%;
+
+    @media only screen and (max-width: 1000px) {
+      height: auto;
+    }
+
     &__wrapper {
-      width: 100%;
       display: inline-block;
+      width: 100%;
+      height: 100%;
+
+      &.flex-group {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        min-height: 100%;
+      }
     }
 
     &__top-group {
@@ -110,12 +137,24 @@
   &__wrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 100px;
+    height: calc(100% - 100px);
+
+    @media only screen and (max-width: 1000px) {
+      padding: 0;
+      height: auto;
+    }
   }
 
   &__video__player {
     width: 100%;
-    height: 471px;
+    height: 100%;
     background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    display: flex;
     border-radius: 8px;
 
     @media only screen and (max-width: 1000px) {
@@ -133,6 +172,14 @@
   }
 
   &__side-bar {
+    padding-left: 30px;
+    height: 100%;
+    overflow: auto;
+
+    @media only screen and (max-width: 1000px) {
+      padding-left: 12px;
+    }
+
     &__title {
       font-weight: 600;
       font-size: 16px;
@@ -179,15 +226,22 @@
     }
 
     &__description__text {
-      color: #fff;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 20px;
       position: relative;
       height: 130px;
       overflow: hidden;
-      padding-right: 100px;
+      padding-right: 50px;
+
+      @media only screen and (max-width: 1000px) {
+        padding-right: 0;
+      }
+
+      p {
+        color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+      }
 
       &.active {
         overflow: auto;

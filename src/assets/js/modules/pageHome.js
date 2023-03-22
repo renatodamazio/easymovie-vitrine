@@ -55,15 +55,17 @@ const filterCategoriesHome = () => {
 
 const readMoreLess = () => {
   let defaultHeight = 130
-  let text = $('.modal-portfolio__side-bar__description__text')
-  let textHeight = text.css('height')
   let button = $('.read-more')
-  text.css({ 'max-height': defaultHeight, overflow: 'hidden' })
-
-  textHeight = textHeight ? parseInt(textHeight.replace('px', '')) : 100
 
   button.click(function () {
     let newHeight = 0
+
+    let text = $('.modal-portfolio__side-bar__description__text')
+    let textHeight = text.find('p').css('height')
+    text.css({ 'max-height': defaultHeight, overflow: 'hidden' })
+
+    textHeight = textHeight ? parseInt(textHeight.replace('px', '')) : 100
+
     if (text.hasClass('active')) {
       newHeight = defaultHeight
       text.removeClass('active')
