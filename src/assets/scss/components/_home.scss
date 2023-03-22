@@ -14,7 +14,7 @@
     @media only screen and (max-width: 1000px) {
       overflow: auto;
     }
-    
+
     .filter-button {
       &--active {
         background-color: var(--dse-color-primary-10);
@@ -23,6 +23,12 @@
         background-color: var(--dse-color-primary-10);
       }
     }
+  }
+}
+
+.category-home[data-home-category='informacoes'] {
+  @media only screen and (max-width: 1000px) {
+    display: none;
   }
 }
 
@@ -115,7 +121,7 @@
 .home-tab-filter {
   display: none;
   margin-bottom: 40px;
-  
+
   a {
     font-style: normal;
     font-weight: 600;
