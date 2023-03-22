@@ -37,6 +37,18 @@ const carousel = () => {
   )
 }
 
+const handleURL = () => {
+  const url = new URL(window.location)
+
+  $('.__handle-url').click(function (e) {
+    e.preventDefault()
+    const url = $(this).attr('href')
+
+    window.history.pushState('Object', 'Categoria JavaScript', url)
+    return
+  })
+}
+
 const filterCategoriesHome = () => {
   $('.filter-home-button').click(function () {
     $('.filter-home-button.active').removeClass('active')
@@ -87,13 +99,16 @@ const readMoreLess = () => {
 
 const Home = () => {
   $(document).ready(() => {
+    handleURL()
+
     $('.open-modal-portfolio').click(() => {
       $('.modal-portfolio').stop().fadeIn()
     })
 
-    $('.modal-portfolio__close').click(() =>
+    $('.modal-portfolio__close').click(() => {
       $('.modal-portfolio').stop().fadeOut()
-    )
+      window.history.pushState('', '', "/")
+    })
     filterCategoriesHome()
     filterVideos()
     readMoreLess()
