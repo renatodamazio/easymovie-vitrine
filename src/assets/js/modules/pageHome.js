@@ -47,9 +47,9 @@ const carousel = () => {
   $('.slide-control.arrow-left').click(() => {
     carousel_video.trigger('prev.owl.carousel')
   })
-  $('.slide-control.arrow-right').click(() =>
+  $('.slide-control.arrow-right').click(() => {
     carousel_video.trigger('next.owl.carousel')
-  )
+  })
 }
 
 const handleVideoPlayer = () => {
@@ -70,7 +70,7 @@ const handleVideoPlayer = () => {
     allowfullscreen="true"
   ></iframe>
     `)
-  });
+  })
 }
 
 const getVideoIndex = (url) => {
@@ -84,10 +84,13 @@ const getVideoIndex = (url) => {
 }
 
 const showSideBarSection = (videoId) => {
+  $('.modal-portfolio__side-bar__wrapper.active').removeClass('active')
+
   $('.modal-portfolio__side-bar__wrapper')
     .stop(true, true)
     .fadeOut('fast', () => {
       $(`[data-side-bar-id="${videoId}"]`)
+        .addClass('active')
         .delay(900)
         .stop(true, true)
         .fadeIn('slow')
@@ -143,7 +146,9 @@ const readMoreLess = () => {
   button.click(function () {
     let newHeight = 0
 
-    let text = $('.modal-portfolio__side-bar__description__text')
+    let text = $(
+      '.modal-portfolio__side-bar__wrapper.active .modal-portfolio__side-bar__description__text'
+    )
     let textHeight = text.find('p').css('height')
     text.css({ 'max-height': defaultHeight, overflow: 'hidden' })
 
@@ -158,7 +163,7 @@ const readMoreLess = () => {
       text.addClass('active')
       button.text('Ver menos')
     }
-    text.animate(
+    text.stop(true, true).animate(
       {
         height: newHeight,
         'max-height': newHeight,
@@ -177,8 +182,8 @@ const Home = () => {
     })
 
     $('.modal-portfolio__close').click(() => {
-      $('.modal-portfolio').stop().fadeOut();
-      handleVideoPlayer();
+      $('.modal-portfolio').stop().fadeOut()
+      handleVideoPlayer()
       window.history.pushState('', '', '/')
     })
 
