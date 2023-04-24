@@ -13,7 +13,7 @@ const filterVideos = () => {
 
     const videos = $('.card__videos').filter(function () {
       const video = $(this).data('category')
-      return video !== category && category !== 'all'
+      return !video.match(category) && category !== 'all'
     })
 
     $(videos).addClass(class__hidden_video)
@@ -91,8 +91,8 @@ const showSideBarSection = (videoId) => {
     .fadeOut('fast', () => {
       $(`[data-side-bar-id="${videoId}"]`)
         .addClass('active')
-        .delay(900)
         .stop(true, true)
+        .delay(890)
         .fadeIn('slow')
     })
 }

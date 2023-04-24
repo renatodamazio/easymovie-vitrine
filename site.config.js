@@ -34,7 +34,7 @@ const DATA = {
   items: [
     {
       title: 'John Wick Chapter 4',
-      category: 'animacao',
+      category: 'animacao publicidade',
       url: 'john-wick',
       hash_tags: ['#editor', '#animação', '#livro', '#ilustração'],
       skills: ['Edição', 'Capitação', 'Iluminação'],
@@ -59,7 +59,7 @@ const DATA = {
     },
     {
       title: 'Game of Thrones',
-      category: 'edicao',
+      category: 'edicao game-play',
       url: 'game-of-thrones',
       hash_tags: ['#editor', '#animação', '#livro', '#ilustração'],
       skills: ['Edição', 'Capitação', 'Iluminação'],
