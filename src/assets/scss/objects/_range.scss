@@ -10,12 +10,34 @@
     display: inline-block;
     background: #B3D0FE;
 
-    &.active {
-        background: #0161fa;
-    }
-
     &:last-child {
       margin: 0;
+    }
+  }
+
+  &__status {
+    &--avancado {
+      span:nth-child(1),
+      span:nth-child(2),
+      span:nth-child(3) {
+        background-color: #0161fa;
+      }
+    }
+    &--basico {
+      span:nth-child(1) {
+        background-color: #0161fa;
+      }
+    }
+    &--intermediario {
+      span:nth-child(1),
+      span:nth-child(2) {
+        background-color: #0161fa;
+      }
+    }
+    &--dominio {
+      span {
+        background-color: #0161fa;
+      }
     }
   }
 }
