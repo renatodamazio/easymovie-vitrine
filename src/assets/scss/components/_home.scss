@@ -1,18 +1,23 @@
 .videos {
   &__filter {
     display: flex;
-
+    flex-wrap: wrap;
     @media only screen and (max-width: 1000px) {
       height: 40px;
     }
 
     li {
       margin-right: 10px;
+      margin-bottom: 10px;
+      @media only screen and (max-width: 1000px) {
+        margin-bottom: 0;
+      }
     }
     margin-bottom: 32px;
 
     @media only screen and (max-width: 1000px) {
       overflow: auto;
+      flex-wrap: nowrap;
     }
 
     .filter-button {
