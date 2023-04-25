@@ -24,10 +24,16 @@
               <div class="modal-portfolio__carousel__owl-slider owl-carousel">
                 <!-- Items -->
                 <% for(var x = 0; x < items.length; x++) { %>
-                <div class="modal-portfolio__video__wrapper flex-group" data-video-url="<%= items[x].url  %>">
+                <div
+                  class="modal-portfolio__video__wrapper flex-group"
+                  data-video-url="<%= items[x].url  %>"
+                >
                   <div class="modal-portfolio__video__player">
                     <!-- Video vai aqui.-->
-                    <div data-video-id="<%= items[x].videoId %>" class="data-video-id">
+                    <div
+                      data-video-id="<%= items[x].videoId %>"
+                      class="data-video-id"
+                    >
                       <iframe
                         src="https://customer-4tl6n57yx29lfuzn.cloudflarestream.com/1661365099dc9a0712dcb988762bbcf0/iframe?poster=https%3A%2F%2Fcustomer-4tl6n57yx29lfuzn.cloudflarestream.com%2F1661365099dc9a0712dcb988762bbcf0%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D5s%26height%3D600"
                         style="
@@ -123,81 +129,82 @@
               <h3 class="modal-portfolio__side-bar__user__name">Melissa N.</h3>
             </div>
             <% for (var y = 0; y < items.length; y++) { %>
-              <div data-side-bar-id=<%= items[y].url %> class="modal-portfolio__side-bar__wrapper">
-                  <!--- -->
-                  <div class="modal-portfolio__side-bar__info section-separator">
-                    <h3 class="modal-portfolio__side-bar__title">Atuação</h3>
-                    <ol class="modal-portfolio__side-bar__info__tags">
-                       <% for(var x = 0; x < items[y].skills.length; x++) { %>
-                          <li>
-                            <a
-                              href="#!"
-                              class="tag__filled-primary overflow-hidden fs-sm w-auto"
-                            >
-                              <%= items[y].skills[x] %>
-                            </a>
-                          </li>
-                        <% } %>
-                    </ol>
-                  </div>
-
-                  <!-- Tools -->
-                  <div class="modal-portfolio__side-bar__tools section-separator">
-                    <h3 class="modal-portfolio__side-bar__title">Ferramentas</h3>
-                  </div>
-
-                  <!-- Tags -->
-                  <div class="modal-portfolio__side-bar__tags section-separator">
-                    <h3 class="modal-portfolio__side-bar__title">Tags</h3>
-                    <ol class="modal-portfolio__side-bar__tags__group">
-                      <% for(var x = 0; x < items[y].tags.length; x++) { %>
-                        <li>
-                          <div class="dse-tags__dark"><%= items[y].tags[x] %></div>
-                        </li>
-                      <% } %>
-                    </ol>
-                  </div>
-
-                  <!-- Descrição -->
-                  <div
-                    class="modal-portfolio__side-bar__description section-separator"
-                  >
-                    <h3 class="modal-portfolio__side-bar__title">Descrição</h3>
-
-                    <div
-                      class="modal-portfolio__side-bar__description__text text--hidden"
-                    >
-                      <p>
-                        <%= items[y].description %>
-                      </p>
-                    </div>
+            <div data-side-bar-id="<%" ="items[y].url" %>
+              class="modal-portfolio__side-bar__wrapper">
+              <!--- -->
+              <div class="modal-portfolio__side-bar__info section-separator">
+                <h3 class="modal-portfolio__side-bar__title">Atuação</h3>
+                <ol class="modal-portfolio__side-bar__info__tags">
+                  <% for(var x = 0; x < items[y].skills.length; x++) { %>
+                  <li>
                     <a
                       href="#!"
-                      class="modal-portfolio__side-bar__description__text__more read-more"
-                      >Ver mais</a
+                      class="tag__filled-primary overflow-hidden fs-sm w-auto"
                     >
-                  </div>
-                  <!-- Pedir orçamento -->
-                  <div
-                    class="modal-portfolio__side-bar__call-to-action section-separator"
-                  >
-                    <a
-                      href="#!"
-                      class="dse-button-link link-theme____neutral__outlined icon--right"
-                    >
-                      <i>
-                        <img
-                          class="svg-icon"
-                          width="24px"
-                          height="24px"
-                          src="<%= base.static %>images/clipboard-dollar.svg"
-                          title="Icone Play"
-                        />
-                      </i>
-                      <span>Pedir orçamento</span>
+                      <%= items[y].skills[x] %>
                     </a>
-                  </div>
+                  </li>
+                  <% } %>
+                </ol>
               </div>
+
+              <!-- Tools -->
+              <div class="modal-portfolio__side-bar__tools section-separator">
+                <h3 class="modal-portfolio__side-bar__title">Ferramentas</h3>
+              </div>
+
+              <!-- Tags -->
+              <div class="modal-portfolio__side-bar__tags section-separator">
+                <h3 class="modal-portfolio__side-bar__title">Tags</h3>
+                <ol class="modal-portfolio__side-bar__tags__group">
+                  <% for(var x = 0; x < items[y].tags.length; x++) { %>
+                  <li>
+                    <div class="dse-tags__dark"><%= items[y].tags[x] %></div>
+                  </li>
+                  <% } %>
+                </ol>
+              </div>
+
+              <!-- Descrição -->
+              <div
+                class="modal-portfolio__side-bar__description section-separator"
+              >
+                <h3 class="modal-portfolio__side-bar__title">Descrição</h3>
+
+                <div
+                  class="modal-portfolio__side-bar__description__text text--hidden"
+                >
+                  <div class="modal-portfolio__side-bar__description--text">
+                    <p><%= items[y].description %></p>
+                  </div>
+                </div>
+                <a
+                  href="#!"
+                  class="modal-portfolio__side-bar__description__text__more read-more"
+                  >Ver mais</a
+                >
+              </div>
+              <!-- Pedir orçamento -->
+              <div
+                class="modal-portfolio__side-bar__call-to-action section-separator"
+              >
+                <a
+                  href="#!"
+                  class="dse-button-link link-theme____neutral__outlined icon--right"
+                >
+                  <i>
+                    <img
+                      class="svg-icon"
+                      width="24px"
+                      height="24px"
+                      src="<%= base.static %>images/clipboard-dollar.svg"
+                      title="Icone Play"
+                    />
+                  </i>
+                  <span>Pedir orçamento</span>
+                </a>
+              </div>
+            </div>
             <% } %>
           </div>
         </div>
@@ -381,7 +388,6 @@
 
               <div class="card__videos__wrapper">
                 <div class="card__videos__row">
-
                   <% for(var x = 0; x < items.length; x++) { %>
 
                   <div

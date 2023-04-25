@@ -139,6 +139,12 @@ const filterCategoriesHome = () => {
   })
 }
 
+function scrollbarVisible() {
+  let text = document.querySelectorAll('.modal-portfolio__side-bar__wrapper.active .modal-portfolio__side-bar__description--text')
+
+  const validation = text > 130
+}
+
 const readMoreLess = () => {
   let defaultHeight = 130
   let button = $('.read-more')
@@ -178,7 +184,11 @@ const Home = () => {
     handleURL()
 
     $('.open-modal-portfolio').click(() => {
-      $('.modal-portfolio').stop().fadeIn()
+      $('.modal-portfolio')
+        .stop()
+        .fadeIn(function () {
+          setTimeout(() => scrollbarVisible(), 400);
+        })
     })
 
     $('.modal-portfolio__close').click(() => {
