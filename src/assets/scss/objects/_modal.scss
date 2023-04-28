@@ -11,6 +11,14 @@
   overflow: auto;
   display: none;
 
+  .owl-item {
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
   .owl-stage,
   .owl-item,
   .owl-loaded,
