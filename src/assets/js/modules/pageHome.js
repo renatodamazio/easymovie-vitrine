@@ -41,6 +41,9 @@ const carousel = () => {
     items: 1,
     loop: false,
     dots: false,
+    onComplete() {
+      console.log('finish')
+    },
     onTranslate: counter,
   })
 
@@ -140,17 +143,28 @@ const filterCategoriesHome = () => {
 }
 
 function scrollbarVisible() {
-  let text = document.querySelectorAll('.modal-portfolio__side-bar__wrapper.active .modal-portfolio__side-bar__description--text')
+  const wrapper = $('.modal-portfolio__side-bar__description.section-separator')
 
-  const validation = text > 130
+  $(wrapper).each(function (index, item) {
+    const parent_height = $(this)
+      .find('.modal-portfolio__side-bar__description--text p')
+      .html()
+    const text_size = parent_height.length
+
+    if (text_size < 500) {
+      $(this).find('.read-more').css('display', 'none')
+    }
+  })
 }
 
 const readMoreLess = () => {
   let defaultHeight = 130
   let button = $('.read-more')
 
-  button.click(function () {
+  button.on('click', function () {
     let newHeight = 0
+
+    console.log('cliquei')
 
     let text = $(
       '.modal-portfolio__side-bar__wrapper.active .modal-portfolio__side-bar__description__text'
@@ -180,27 +194,27 @@ const readMoreLess = () => {
 }
 
 const Home = () => {
+  handleURL()
+
+  $('.open-modal-portfolio').click(() => {
+    $('.modal-portfolio')
+      .stop()
+      .fadeIn(function () {})
+  })
+
+  $('.modal-portfolio__close').click(() => {
+    $('.modal-portfolio').stop().fadeOut()
+    handleVideoPlayer()
+    window.history.pushState('', '', '/')
+  })
+
+  filterCategoriesHome()
+  filterVideos()
+  readMoreLess()
+  carousel()
+
   $(document).ready(() => {
-    handleURL()
-
-    $('.open-modal-portfolio').click(() => {
-      $('.modal-portfolio')
-        .stop()
-        .fadeIn(function () {
-          setTimeout(() => scrollbarVisible(), 400);
-        })
-    })
-
-    $('.modal-portfolio__close').click(() => {
-      $('.modal-portfolio').stop().fadeOut()
-      handleVideoPlayer()
-      window.history.pushState('', '', '/')
-    })
-
-    filterCategoriesHome()
-    filterVideos()
-    readMoreLess()
-    carousel()
+    scrollbarVisible()
   })
 }
 export default Home
