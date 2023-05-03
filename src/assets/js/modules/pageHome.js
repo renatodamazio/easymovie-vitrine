@@ -96,7 +96,7 @@ const showSideBarSection = (videoId) => {
         .addClass('active')
         .stop(true, true)
         .delay(890)
-        .fadeIn('slow')
+        .fadeIn('fast')
     })
 }
 
@@ -204,8 +204,14 @@ const Home = () => {
 
   $('.modal-portfolio__close').click(() => {
     $('.modal-portfolio').stop().fadeOut()
-    handleVideoPlayer()
-    window.history.pushState('', '', '/')
+    handleVideoPlayer();
+
+    const origin = (window.location.origin);
+    const url = window.location.href.replace(origin, "");
+    const url_slices = url.split("/");
+    const original_url = url_slices[1];
+
+    window.history.pushState('', '', `/${original_url}`)
   })
 
   filterCategoriesHome()
